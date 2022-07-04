@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  button {
+    aspect-ratio: 1 / 1;
+    border-radius: 0;
+  }
+}
+
