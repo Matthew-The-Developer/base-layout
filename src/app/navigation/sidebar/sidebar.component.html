@@ -1,7 +1,35 @@
-<button mat-flat-button color="primary">
-  <mat-icon>dashboard</mat-icon>
+<button mat-flat-button color="primary" class="square">
+  <mat-icon>content_paste</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Dashboard</p>
 </button>
 
-<button mat-flat-button color="primary">
+<button mat-flat-button color="primary" class="square">
   <mat-icon>groups</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Patients</p>
+</button>
+
+<button mat-flat-button color="primary" class="square">
+  <mat-icon>local_hospital</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Clinic</p>
+</button>
+
+<button mat-flat-button color="primary" class="square">
+  <mat-icon>receipt_long</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Billing</p>
+</button>
+
+<button mat-flat-button color="primary" class="square">
+  <mat-icon>insert_chart_outlined</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Reports</p>
+</button>
+
+<span style="flex: 1 1 auto;"></span>
+
+<button
+  (click)="labels = !labels"
+  color="primary"
+  class="radius-0"
+  mat-flat-button
+>
+  <mat-icon>{{ labels ? 'navigate_before' : 'navigate_next' }}</mat-icon>
 </button>

@@ -1,11 +1,23 @@
+@import 'variables';
+
 :host {
+  height: calc(100vh - 64px);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  background: $med-primary;
 
-  button {
-    aspect-ratio: 1 / 1;
+  .radius-0 {
     border-radius: 0;
   }
-}
 
+  .square {
+    aspect-ratio: 1 / 1;
+    padding: 0.75rem;
+    border-radius: 0;
+    
+    p {
+      margin: 0;
+    }
+  }
+}
