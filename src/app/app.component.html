@@ -18,7 +18,7 @@
     </mat-sidenav>
     
     <mat-sidenav-content>
-      <mat-card *ngFor="let card of [0, 1, 2, 3, 4, 5]">Simple card {{ card }}</mat-card>
+      <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
   
@@ -27,6 +27,6 @@
     color="accent"
     class="footer"
   >
-    <span>Footer</span>
+    <span class="mat-caption">Footer</span>
   </mat-toolbar>
 </div>

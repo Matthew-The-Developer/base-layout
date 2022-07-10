@@ -1,35 +1,66 @@
-<button mat-flat-button color="primary" class="square">
-  <mat-icon>content_paste</mat-icon>
-  <p *ngIf="labels" class="mat-caption">Dashboard</p>
-</button>
+<div *ngIf="true">
+  <app-buttons></app-buttons>
+</div>
 
-<button mat-flat-button color="primary" class="square">
-  <mat-icon>groups</mat-icon>
-  <p *ngIf="labels" class="mat-caption">Patients</p>
-</button>
-
-<button mat-flat-button color="primary" class="square">
-  <mat-icon>local_hospital</mat-icon>
-  <p *ngIf="labels" class="mat-caption">Clinic</p>
-</button>
-
-<button mat-flat-button color="primary" class="square">
-  <mat-icon>receipt_long</mat-icon>
-  <p *ngIf="labels" class="mat-caption">Billing</p>
-</button>
-
-<button mat-flat-button color="primary" class="square">
-  <mat-icon>insert_chart_outlined</mat-icon>
-  <p *ngIf="labels" class="mat-caption">Reports</p>
-</button>
-
-<span style="flex: 1 1 auto;"></span>
-
-<button
-  (click)="labels = !labels"
-  color="primary"
-  class="radius-0"
-  mat-flat-button
->
-  <mat-icon>{{ labels ? 'navigate_before' : 'navigate_next' }}</mat-icon>
-</button>
+<div>
+  <mat-sidenav-container autosize>
+    <mat-sidenav
+      fixedTopGap="64"
+      mode="side"
+      fixedInViewport
+      [opened]="true"
+    >
+      <mat-action-list>
+        <div mat-subheader>Demographics</div>
+        <div mat-subheader>Workflows</div>
+        <button mat-list-item>Admissions / Modalities</button>
+        <button mat-list-item>Background Information</button>
+        <button mat-list-item>Employment History</button>
+        <button mat-list-item>External Idenifiers</button>
+        <button mat-list-item>Hospital Service Adissions</button>
+        <button mat-list-item>Names</button>
+        <button mat-list-item>Primary Characteristics</button>
+        <button mat-list-item>Names</button>
+        <div mat-subheader>CMS Forms</div>
+        <button mat-list-item>2728 Form (Medical Evidence)</button>
+        <div mat-subheader>Contact Information</div>
+        <button mat-list-item>Additional Contacts</button>
+        <button mat-list-item>Addresses</button>
+        <button mat-list-item>Phones</button>
+        <button mat-list-item>Email Addresses</button>
+        <div mat-subheader>Record Keeping</div>
+        <button mat-list-item>Disclosure of Health Information</button>
+        <button mat-list-item>Medical Record Destruction</button>
+        <button mat-list-item>Medical Record Storage</button>
+        <div mat-subheader>Clinical Information</div>
+        <div mat-subheader>Clinical Information</div>
+        <button mat-list-item>Amputations</button>
+        <button mat-list-item>Fall Risk Assessment</button>
+        <button mat-list-item>Heights</button>
+        <button mat-list-item>Procedure Results</button>
+        <button mat-list-item>Transfusions</button>
+        <button mat-list-item>Transplant Status</button>
+        <button mat-list-item>Vascular Accesses</button>
+        <div mat-subheader>Orders</div>
+        <div mat-subheader>Orders</div>
+        <button mat-list-item>Diet Orders</button>
+        <button mat-list-item>Procedure Orders</button>
+        <div mat-subheader>Documents</div>
+        <div mat-subheader>All</div>
+        <button mat-list-item>Patient Documents</button>
+        <div mat-subheader>Workflows</div>
+        <div mat-subheader>New Patient</div>
+        <button mat-list-item>Names</button>
+        <button mat-list-item>Primary Characteristics</button>
+        <div mat-subheader>Resources</div>
+        <div mat-subheader>Coordination of Benefits</div>
+        <button mat-list-item>Coordination of Benefits</button>
+        <div mat-subheader>American Kidney Fund</div>
+        <button mat-list-item>Patient Profile Worksheet</button>
+        <button mat-list-item>AKF Request</button>
+        <div mat-subheader>Financial Assistance Form</div>
+        <button mat-list-item>Financial Assistance Form</button>
+      </mat-action-list>
+    </mat-sidenav>
+  </mat-sidenav-container>
+</div>

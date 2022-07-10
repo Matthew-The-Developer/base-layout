@@ -1,0 +1,63 @@
+<button
+  [routerLink]="['']"
+  [class.current]="currentURL == baseRoute.Dashboard"
+  color="primary" 
+  class="square"
+  mat-flat-button
+>
+  <mat-icon>content_paste</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Dashboard</p>
+</button>
+
+<button
+  [routerLink]="['patients']"
+  [class.current]="currentURL == baseRoute.Patients"
+  color="primary"
+  class="square"
+  mat-flat-button
+>
+  <mat-icon>groups</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Patients</p>
+</button>
+
+<button 
+  [class.current]="currentURL == baseRoute.Clinical"
+  color="primary"
+  class="square"
+  mat-flat-button
+>
+  <mat-icon>local_hospital</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Clinic</p>
+</button>
+
+<button
+  [class.current]="currentURL == baseRoute.Billing"
+  color="primary"
+  class="square"
+  mat-flat-button
+>
+  <mat-icon>receipt_long</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Billing</p>
+</button>
+
+<button
+  [class.current]="currentURL == baseRoute.Reports"
+  color="primary"
+  class="square"
+  mat-flat-button
+>
+  <mat-icon>insert_chart_outlined</mat-icon>
+  <p *ngIf="labels" class="mat-caption">Reports</p>
+</button>
+
+<span style="flex: 1 1 auto;"></span>
+
+<button
+  (click)="labels = !labels"
+  color="primary"
+  class="radius-0"
+  mat-flat-button
+>
+  <mat-icon>{{ labels ? 'navigate_before' : 'navigate_next' }}</mat-icon>
+</button>
+
