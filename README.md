@@ -11,6 +11,7 @@ This project is for figuring out a good base layer layout for applications being
 - [x] Left navigation sidebar
 - [x] Toggable labels for navigation buttons
 - [x] Theme customization
+- [x] Page selection highlight bar
 - [ ] Toggable Left side drawer
 - [ ] Device information service
 - [ ] Angular Breakpoint observer service
