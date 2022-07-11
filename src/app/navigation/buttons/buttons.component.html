@@ -20,7 +20,8 @@
   <p *ngIf="labels" class="mat-caption">Patients</p>
 </button>
 
-<button 
+<button
+  [routerLink]="['clinical']"
   [class.current]="currentURL == baseRoute.Clinical"
   color="primary"
   class="square"
@@ -31,6 +32,7 @@
 </button>
 
 <button
+  [routerLink]="['billing']"
   [class.current]="currentURL == baseRoute.Billing"
   color="primary"
   class="square"
@@ -41,6 +43,7 @@
 </button>
 
 <button
+  [routerLink]="['reports']"
   [class.current]="currentURL == baseRoute.Reports"
   color="primary"
   class="square"

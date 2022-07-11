@@ -9,6 +9,9 @@ import { SidebarComponent } from './navigation/sidebar/sidebar.component';
 import { ButtonsComponent } from './navigation/buttons/buttons.component';
 import { PatientComponent } from './patient/patient.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { ClinicalComponent } from './clinical/clinical.component';
+import { BillingComponent } from './billing/billing.component';
+import { ReportsComponent } from './reports/reports.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SidebarComponent,
     ButtonsComponent,
     PatientComponent,
-    DashboardComponent
+    DashboardComponent,
+    ClinicalComponent,
+    BillingComponent,
+    ReportsComponent
   ],
   imports: [
     BrowserModule,
